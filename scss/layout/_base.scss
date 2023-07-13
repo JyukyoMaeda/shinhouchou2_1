@@ -60,7 +60,7 @@ body{
 	animation: fadein 2s forwards;
 }
 img{
-	pointer-events: none;
+	// pointer-events: none;
 	user-drag: none;
 	-webkit-user-drag: none;
 	-moz-user-select: none;
@@ -71,7 +71,7 @@ img{
 
 
 .w1200{
-	width: 95% !important;
+	width: 65% !important;
 	max-width: 1200px;
 	margin: auto;
 	&.-s100{

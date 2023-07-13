@@ -1,18 +1,13 @@
-
 .l-slider {
     margin: 30px 0 auto auto;
-    width: 91.8%;
-    // width: 83%;
-    // max-width: 500px;
     @include mq(tb){
-        margin: 60px 0 auto auto;
-        width: 83%;
+        margin: 60px auto auto;
     }
     @include mq(pc){
-        margin: 145px 0 auto auto;
+        margin: 145px auto auto;
     }
     .l-slickImg {
-        margin: 0 10px 10px;
+        margin: 0 5px 10px;
         text-align: end;
         img{
             width: 90%;
@@ -86,8 +81,8 @@
     &:hover{
         background: $item-hover--bg;
     }
-  }
-  .prev-arrow {
+}
+.prev-arrow {
     position: absolute;
     top: -7.5%;
     left: 0%;
@@ -98,8 +93,8 @@
     &:hover{
         
     }
-  }
-  .next-arrow {
+}
+.next-arrow {
     position: absolute;
     top: -7.5%;
     left: 12%;
@@ -107,11 +102,87 @@
         top: -8%;
         left: 5%;
     }
-  }
-//   button {
-//     -webkit-appearance: none;
-//     -moz-appearance: none;
-//     appearance: none;
-//     outline: none;
-//     padding: 0;
-//   }
+}
+
+
+
+.l-slider{
+    .top-slider01{
+        .slick-list {
+            padding: 0 !important;
+        }
+        .l-slickImg {
+
+        }
+    }
+    .top-slider02{
+        .slick-list {
+            padding: 0 !important;
+        }
+        .slick-prev {
+            left: 0%;
+            filter: drop-shadow(2px 0px 1px white);
+            @include mq(tb){
+                left: -4% !important;
+            }
+        }
+        .slick-next {
+            left: 12%;
+            filter: drop-shadow(2px 0px 1px white);
+            @include mq(tb){
+                left: auto;
+                right: -4%;
+            }
+        }
+        .l-slickImg {
+
+        }
+    }
+    .top-slider03{
+        width: 100%;
+        margin: 0 0 auto auto;
+        @include mq(tb){
+            width: 83%;
+            margin: 0 0 auto auto;
+        }
+        .slick-list {
+            padding: 0 !important;
+        }
+        .slick-prev {
+            left: 0%;
+            filter: drop-shadow(2px 0px 1px white);
+            @include mq(tb){
+                left: -4% !important;
+            }
+        }
+        .slick-next {
+            left: 12%;
+            filter: drop-shadow(2px 0px 1px white);
+            @include mq(tb){
+                left: auto;
+                right: -4%;
+            }
+        }
+        .prev-arrow {
+            position: absolute;
+            top: -7.5%;
+            left: 0%;
+            @include mq(tb){
+                top: -26%;
+                left: 50%;
+            }
+            &:hover{
+                
+            }
+        }
+        .next-arrow {
+            position: absolute;
+            top: -7.5%;
+            left: 12%;
+            @include mq(tb){
+                top: -26%;
+                left: 55%;
+            }
+        }
+    }
+}
