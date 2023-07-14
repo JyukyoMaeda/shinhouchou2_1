@@ -127,7 +127,7 @@
             }
         }
         .slick-next {
-            left: 12%;
+            right: 12%;
             filter: drop-shadow(2px 0px 1px white);
             @include mq(tb){
                 left: auto;

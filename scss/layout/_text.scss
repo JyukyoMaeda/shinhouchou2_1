@@ -48,6 +48,11 @@
         text-shadow: 1px 1px 1px #fff;
     }
 
+    &.-border{
+        padding: 1vh 0;
+        border: 1px solid black;
+    }
+
         // 大きさ
         &.-size10{
             font-size: 12px;

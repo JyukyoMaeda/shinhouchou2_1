@@ -303,7 +303,30 @@
 				}
 			}
 		}
-
+		&.-Instagram{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: auto;
+			@media screen and (min-width: 768px){
+				flex-wrap: nowrap;
+			}
+			.flexItem{
+				width: calc(100%/2);
+				margin-bottom: 5vw;
+				@include mq(tb){
+					width: calc(100%/4);
+					padding: 0 1px;
+					margin-bottom: auto;
+					&:first-child{
+						padding: 0 1px 0 0;
+					}
+					&:last-child{
+						padding: 0 0 0 1px;
+					}
+				}
+			}
+		}
 		// オリジナル
 		&.-header-bar{
 			display: flex;
@@ -318,7 +341,7 @@
 			.flexItem{
 				&.-logoArea{
 					@include mq(sp){
-						width: 17%;
+						width: 22%;
 					}
 					@include mq(tb){
 						width: calc(10%);

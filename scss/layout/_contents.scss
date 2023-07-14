@@ -24,6 +24,12 @@
 						background-image: url(../images/bg/madori_bg.jpg);
 					}
 				}
+				&.-parallax_bg02{//ここに背景を指定する。
+					background-image: url(../images/bg/hinoki-contents_bg.jpg);
+					@include mq(tb){
+						background-image: url(../images/bg/hinoki-contents_bg.jpg);
+					}
+				}
 			}
 		}
 		.l-contentsBox{// コンテンツ要素
@@ -55,7 +61,7 @@
 
 			// カードレイアウト内のボタン
 			&.-card-btn{
-				top: 80%;
+				top: 87%;
 				left: 50%;
 				transform: translateX(-50%);
 				width: 50%;
@@ -91,7 +97,33 @@
 					top: 64%;
 				}
 			}
-
+			&.-top-built-contents{
+				top: 25%;
+				left: 50%;
+				transform: translateX(-50%);
+				@include mq(tb){
+					top: 50%;
+				}
+			}
+			&.-top-boxBtn{
+				top: 80%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 20%;
+				@include mq(tb){
+					width: 30%;
+				}
+			}
+			&.-movie{
+				top: 0;
+				left: 30%;
+				width: 80%;
+				@include mq(tb){
+					top: 33%;
+					left: 20%;
+					width: 27%;
+				}
+			}
 
 			.l-contentsBox--wrapper{
 				width: 100%;
