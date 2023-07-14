@@ -80,12 +80,20 @@
 				}
 			}
 			&.-card_text{
-				top: 49%;
-				left: 19.9%;
-
-				width: 31%;
-				height: 45.5%;
+				top: 51%;
+				left: 50%;
+				width: 87%;
+				height: 43.5%;
 				overflow-y: scroll;
+				@include mq(sp){
+					transform: translateX(-50%);
+				}
+				@include mq(tb){
+					top: 49%;
+					left: 19.9%;
+					width: 31%;
+					height: 45.5%;
+				}
 			}
 			&.-owners-voice{
 				top: 70%;
@@ -109,15 +117,18 @@
 				top: 80%;
 				left: 50%;
 				transform: translateX(-50%);
-				width: 20%;
+				width: 40%;
 				@include mq(tb){
 					width: 30%;
 				}
 			}
 			&.-movie{
-				top: 0;
-				left: 30%;
+				top: 24%;
+				left: 50%;
 				width: 80%;
+				@include mq(sp){
+					transform: translateX(-50%);
+				}
 				@include mq(tb){
 					top: 33%;
 					left: 20%;
