@@ -312,8 +312,8 @@
 				flex-wrap: nowrap;
 			}
 			.flexItem{
-				width: calc(100%/2);
-				margin-bottom: 5vw;
+				width: 49%;
+				margin-bottom: 2vw;
 				@include mq(tb){
 					width: calc(100%/4);
 					padding: 0 1px;
