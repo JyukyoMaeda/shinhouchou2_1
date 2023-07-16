@@ -333,7 +333,9 @@
 			flex-wrap: nowrap;
 			align-items: center;
 			justify-content: space-between;
-			// padding: 1vh 2.5vw 0;
+			@include mq(sp){
+				justify-content: flex-start;
+			}
 			@include mq(tb){
 				// flex-wrap: nowrap;
 				// padding: 1.5vh 0 0;
@@ -341,7 +343,7 @@
 			.flexItem{
 				&.-logoArea{
 					@include mq(sp){
-						width: 22%;
+						width: 28%;
 					}
 					@include mq(tb){
 						width: calc(10%);
@@ -350,6 +352,12 @@
 					@include mq(tb-pc1400){
 						width: calc(12%);
 						max-width: 130px;
+					}
+				}
+				&.-text_s{
+					@include mq(sp){
+						width: 50%;
+						margin-left: 15px;
 					}
 				}
 			}

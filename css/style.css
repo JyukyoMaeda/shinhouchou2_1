@@ -1641,11 +1641,11 @@
 
 .menu_box {
   position: fixed;
-  top: 2%;
+  top: 3.5%;
   right: 0;
   width: 70px;
   height: 7px;
-  z-index: 10;
+  z-index: 10000;
 }
 @media screen and (min-width: 767px) {
   .menu_box {
@@ -3204,8 +3204,13 @@ img {
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
+  .l-flex--area .l-flex--contents.-header-bar {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
   .l-flex--area .l-flex--contents.-header-bar .flexItem.-logoArea {
-    width: 22%;
+    width: 28%;
   }
 }
 @media screen and (min-width: 767px) {
@@ -3218,6 +3223,12 @@ img {
   .l-flex--area .l-flex--contents.-header-bar .flexItem.-logoArea {
     width: 12%;
     max-width: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-flex--area .l-flex--contents.-header-bar .flexItem.-text_s {
+    width: 50%;
+    margin-left: 15px;
   }
 }
 .l-flex--area .l-flex--contents.-columnBox {
@@ -3567,7 +3578,7 @@ img {
   border-bottom: 1px solid black;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 9999;
 }
 @media screen and (min-width: 767px) {
   .l-header {
