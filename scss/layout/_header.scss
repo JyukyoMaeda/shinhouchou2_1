@@ -1,11 +1,12 @@
-
+// 
 .l-header{
 	padding: 1.5vh 2vw;
 	background: $main-color--w;
+	border-bottom: 1px solid black;
 
-	// position: sticky;
-	// top: 0;
-	// z-index: 10;
+	position: sticky;
+	top: 0;
+	z-index: 10;
 
 	@include mq(tb){
 			padding: 2vh 2vw;
