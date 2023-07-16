@@ -7,6 +7,11 @@
     @include mq(tb){
 
     }
+    &.-btm-btn{
+        @include mq(sp){
+            margin: 40px auto 80px !important;
+        }
+    }
     // 東久留米支店
     &.-higashikurume{
         @include mq(tb){
