@@ -19,13 +19,13 @@
 				background-size: cover;
 				background-repeat: no-repeat;
 				&.-parallax_bg{//ここに背景を指定する。
-					background-image: url(../images/bg/madori_bg_s.jpg);
+					// background-image: url(../images/bg/madori_bg_s.jpg);
 					@include mq(tb){
 						background-image: url(../images/bg/madori_bg.jpg);
 					}
 				}
 				&.-parallax_bg02{//ここに背景を指定する。
-					background-image: url(../images/bg/hinoki-contents_bg.jpg);
+					// background-image: url(../images/bg/hinoki-contents_bg.jpg);
 					@include mq(tb){
 						background-image: url(../images/bg/hinoki-contents_bg.jpg);
 					}
